@@ -62,6 +62,7 @@ public final class SunshinePreferences {
         SharedPreferences.Editor editor = sp.edit();
 
         editor.remove(PREF_COORD_LAT);
+        //this is a comment
         editor.remove(PREF_COORD_LONG);
         editor.apply();
     }
@@ -213,6 +214,6 @@ public final class SunshinePreferences {
         String lastNotificationKey = context.getString(R.string.pref_last_notification);
         editor.putLong(lastNotificationKey, timeOfNotification);
         editor.apply();
-        //this is comment 
+        //this is comment
     }
 }
